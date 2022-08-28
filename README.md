@@ -18,7 +18,7 @@ yarn && yarn build && yarn start
 ```
 
 - Just visit http://localhost:3000
-- Enjoy
+- Enjoy live JioTV HD
 
 ### Disclaimer
 
