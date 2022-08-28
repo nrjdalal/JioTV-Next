@@ -1,7 +1,8 @@
 <div>
 <img src="https://raw.githubusercontent.com/botallen/plugin.video.jiotv/main/resources/icon.png" height="60" width="60">
 
-## JioTV HD Streaming Free on Browser / Android / Android TV
+## JioTV Free HD Streaming
+> Available for -</br>Browser / Android / Android TV
 
 <img src="https://img.shields.io/badge/Status-Working-green"/>
 
