@@ -1,6 +1,9 @@
+<div>
 <img src="https://raw.githubusercontent.com/botallen/plugin.video.jiotv/main/resources/icon.png" height="60" width="60">
 
-## <h4>JioTV HD Streaming Free on Browser / Android / Android TV</h4>
+## JioTV HD Streaming Free on Browser / Android / Android TV
+
+</div>
 
 ---
 
