@@ -3,6 +3,8 @@
 
 ## JioTV HD Streaming Free on Browser / Android / Android TV
 
+<img src="https://img.shields.io/badge/Status-Working-green"/>
+
 </div>
 
 ### How To Use -
