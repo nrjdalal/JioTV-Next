@@ -74,7 +74,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="h-full">
+        <div className="h-screen">
           <ReactPlayer
             url={
               '/api/play' +
