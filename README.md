@@ -5,7 +5,7 @@
 
 </div>
 
-<h5>How To Use -</h5>
+### How To Use -
 
 - Install Node.js
 - [Download](https://github.com/nrjdalal/JioTV-Next/files/9439880/JioTV-Next.zip) and extract the code
