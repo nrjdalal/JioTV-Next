@@ -11,7 +11,7 @@
 <h5>How To Use -</h5>
 
 - Install Node.js
-- [Download](https://github.com/nrjdalal/JioTV-Next/archive/refs/tags/JioTV-Next-v1.zip) and extract the code
+- [Download](https://github.com/nrjdalal/JioTV-Next/files/9439880/JioTV-Next.zip) and extract the code
 - Open terminal in the downloaded folder and run the code given below -
 ```
 yarn && yarn build && yarn start
