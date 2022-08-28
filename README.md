@@ -15,7 +15,7 @@
 - Open terminal in the downloaded folder and run the code given below -
 
 ```
-yarn && yarn build && yarn start
+npm install && npm run build && npn run start
 ```
 
 - Just visit http://localhost:3000
