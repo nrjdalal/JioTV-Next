@@ -7,7 +7,7 @@
 
 ### How To Use -
 
-- Install Node.js
+- Install [Node.js](https://nodejs.org/en/download/)
 - [Download](https://github.com/nrjdalal/JioTV-Next/files/9439880/JioTV-Next.zip) and extract the code
 - Open terminal in the downloaded folder and run the code given below -
 
