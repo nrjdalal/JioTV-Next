@@ -16,7 +16,9 @@ ${protocol}//${host}/api/live?c=${req.query.c}&s=${req.query.s}&u=${req.query.u}
 ${protocol}//${host}/api/live?c=${req.query.c}&s=${req.query.s}&u=${req.query.u}
 `
 
-  res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Content-Type', 'application/vnd.apple.mpegurl')
+
+  res.setHeader('Access-Control-Allow-Origin', '*')
+
   res.status(200).send(stream)
 }

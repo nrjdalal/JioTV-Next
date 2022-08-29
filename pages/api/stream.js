@@ -20,5 +20,6 @@ export default async function handler(req, res) {
   const output = Readable.from(await stream.buffer())
 
   res.setHeader('Access-Control-Allow-Origin', '*')
+
   res.status(200).send(output)
 }

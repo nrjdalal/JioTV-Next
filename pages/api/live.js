@@ -39,9 +39,11 @@ export default async function handler(req, res) {
 
   stream = stream.join('\n')
 
-  res.setHeader('Accept-Range', 'bytes')
   res.setHeader('Access-Control-Allow-Headers', 'Range')
-  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Accept-Range', 'bytes')
   res.setHeader('Content-Type', 'application/vnd.apple.mpegurl')
+
+  res.setHeader('Access-Control-Allow-Origin', '*')
+
   res.status(200).send(stream)
 }
