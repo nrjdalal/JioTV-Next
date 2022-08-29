@@ -76,10 +76,7 @@ const Home = () => {
 
         <div className="h-screen">
           <ReactPlayer
-            url={
-              '/api/play' +
-              `?c=${router.asPath.substring(1)}&s=${user?.ssoToken}&u=${user?.sessionAttributes?.user?.unique}`
-            }
+            url={'/api/play' + `?c=${router.asPath.substring(1)}&s=${user?.ssoToken}&u=${user?.unique}`}
             controls={true}
             playing={true}
             muted={true}

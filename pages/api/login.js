@@ -32,10 +32,13 @@ export default async function handler(req, res) {
   console.log(response)
 
   if (response.ssoLevel === '40') {
-    res.status(200).json(response)
+    res.status(200).json({
+      ssoToken: response.ssoToken,
+      unique: response.sessionAttributes.user.unique,
+    })
+  } else {
+    res.status(404).json({
+      error: 'User Invalid',
+    })
   }
-
-  res.status(404).json({
-    error: 'User Invalid',
-  })
 }
