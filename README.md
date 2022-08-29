@@ -11,6 +11,8 @@
 
 ### How To Use -
 
+<br>
+
 > Method 1 -
 
 - Install [Docker](https://docs.docker.com/get-docker/)
@@ -22,6 +24,8 @@ docker run -d -p 3000:3000 nrjdalal/jiotv
 
 - Just visit http://localhost:3000
 - Enjoy live JioTV HD
+
+<br>
 
 > Method 2 -
 
