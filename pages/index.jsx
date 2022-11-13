@@ -13,13 +13,13 @@ const Index = () => {
 
   useEffect(() => {
     const user = localStorage.getItem('session')
+
     if (user === null) {
       setLogged(false)
     }
   }, [logged])
 
   const sendOTP = async () => {
-    setIsOtp(true)
     await fetch(`/api/otp?number=${number}`)
   }
 
@@ -37,7 +37,13 @@ const Index = () => {
     if (response.status === 200) {
       localStorage.setItem('session', JSON.stringify(await response.json()))
       setLogged(true)
+      setIsOtp(false)
     }
+  }
+
+  const logOut = () => {
+    localStorage.removeItem('session')
+    setLogged(false)
   }
 
   return (
@@ -74,6 +80,11 @@ const Index = () => {
       </div>
 
       <div className="mx-auto min-h-screen  max-w-6xl">
+        <div className="flex justify-end">
+          <div className="rounded-lg bg-white py-1 px-4">
+            {logged ? <button onClick={logOut}>Log Out</button> : 'Log In'}{' '}
+          </div>
+        </div>
         {
           // ~ Search Channels
         }
