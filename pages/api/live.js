@@ -6,7 +6,6 @@ export default async function handler(req, res) {
 
   let stream = `https://jiotv.live.cdn.jio.com/${req.query.c}/${req.query.c}_1200.m3u8` + token(req.query.s)
 
-  // try {
   stream = await fetch(stream, {
     headers: {
       'User-Agent': 'plaYtv/6.0.9 (Linux; Android 5.1.1) ExoPlayerLib/2.13.2',
@@ -46,7 +45,4 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*')
 
   res.status(200).send(stream)
-  // } catch {
-  //   res.end()
-  // }
 }
