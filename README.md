@@ -11,7 +11,7 @@
 
 ### How To Use -
 
-<br>
+<!-- <br> -->
 
 <!-- > Method 1 -
 
@@ -23,9 +23,9 @@ docker run -d -p 3000:3000 nrjdalal/jiotv
 ```
 
 - Just visit http://localhost:3000
-- Enjoy live JioTV HD
+- Enjoy live JioTV HD -->
 
-<br> -->
+<!-- <br> -->
 
 - Install [Node.js](https://nodejs.org/en/download/)
 - [Download](https://github.com/nrjdalal/JioTV-Next/archive/main.zip) and extract the zip
