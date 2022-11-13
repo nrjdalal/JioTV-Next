@@ -17,6 +17,10 @@ const Index = () => {
     }
   }, [logged])
 
+  const sendOTP = async () => {
+    await fetch(`/api/otp?number=${number}`)
+  }
+
   const login = async () => {
     const response = await fetch('/api/login', {
       method: 'POST',
@@ -49,22 +53,14 @@ const Index = () => {
             type="text"
             value={number}
           />
-          <label>Password</label>
+          <button className="my-1 w-full rounded-lg bg-slate-900 py-2 text-white" onClick={sendOTP}>
+            Request OTP
+          </button>
+          <label>OTP</label>
           <input className="rounded-lg text-center" onChange={(e) => setPassword(e.target.value)} type="password" />
           <button className="my-1 w-full rounded-lg bg-slate-900 py-2 text-white" onClick={login}>
-            Login
+            Verify
           </button>
-          <p>
-            No Password?{' '}
-            <a
-              className="underline"
-              href="https://www.jio.com/Enterprise/jio-business/ohs/Support/ForgotPassword/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Set Password
-            </a>
-          </p>
         </div>
       </div>
 

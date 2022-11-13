@@ -1,15 +1,15 @@
 export default async function handler(req, res) {
-  let response = await fetch('https://api.jio.com/v3/dip/user/unpw/verify', {
+  let response = await fetch('https://api.jio.com/v3/dip/user/otp/verify', {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
-      'x-api-key': 'l7xx938b6684ee9e4bbe8831a9a682b8e19f',
-      'app-name': 'RJIL_JioTV',
+      'User-Agent': 'JioTV',
       'Access-Control-Allow-Origin': '*',
+      'x-api-key': 'l7xx75e822925f184370b2e25170c5d5820a',
     },
     body: JSON.stringify({
       identifier: req.body.number,
-      password: req.body.password,
+      otp: req.body.password,
       rememberUser: 'T',
       upgradeAuth: 'Y',
       returnSessionDetails: 'T',
@@ -31,7 +31,7 @@ export default async function handler(req, res) {
 
   console.log(response)
 
-  if (response.ssoLevel === '40') {
+  if (response.ssoLevel === '20') {
     res.status(200).json({
       ssoToken: response.ssoToken,
       unique: response.sessionAttributes.user.unique,
