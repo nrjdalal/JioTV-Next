@@ -27,8 +27,6 @@ docker run -d -p 3000:3000 nrjdalal/jiotv
 
 <br> -->
 
-> How To -
-
 - Install [Node.js](https://nodejs.org/en/download/)
 - [Download](https://github.com/nrjdalal/JioTV-Next/archive/main.zip) and extract the zip
 - Open terminal in the extracted folder and run the code given below -
