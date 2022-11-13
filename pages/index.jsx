@@ -8,6 +8,7 @@ const Index = () => {
   const [logged, setLogged] = useState(true)
   const [number, setNumber] = useState('+91')
   const [password, setPassword] = useState('')
+  const [isOTP, setIsOtp] = useState(false)
   const [search, setSearch] = useState('')
 
   useEffect(() => {
@@ -18,6 +19,7 @@ const Index = () => {
   }, [logged])
 
   const sendOTP = async () => {
+    setIsOtp(true)
     await fetch(`/api/otp?number=${number}`)
   }
 
@@ -46,21 +48,28 @@ const Index = () => {
         }`}
       >
         <div className="flex flex-col items-center gap-y-4 rounded-xl bg-slate-300 p-8 text-slate-900">
-          <label>Jio Number</label>
-          <input
-            className="rounded-lg text-center"
-            onChange={(e) => setNumber(e.target.value)}
-            type="text"
-            value={number}
-          />
-          <button className="my-1 w-full rounded-lg bg-slate-900 py-2 text-white" onClick={sendOTP}>
-            Request OTP
-          </button>
-          <label>OTP</label>
-          <input className="rounded-lg text-center" onChange={(e) => setPassword(e.target.value)} type="password" />
-          <button className="my-1 w-full rounded-lg bg-slate-900 py-2 text-white" onClick={login}>
-            Verify
-          </button>
+          {!isOTP ? (
+            <>
+              <label>Jio Number</label>
+              <input
+                className="rounded-lg text-center"
+                onChange={(e) => setNumber(e.target.value)}
+                type="text"
+                value={number}
+              />
+              <button className="my-1 w-full rounded-lg bg-slate-900 py-2 text-white" onClick={sendOTP}>
+                Request OTP
+              </button>
+            </>
+          ) : (
+            <>
+              <label>OTP</label>
+              <input className="rounded-lg text-center" onChange={(e) => setPassword(e.target.value)} type="password" />
+              <button className="my-1 w-full rounded-lg bg-slate-900 py-2 text-white" onClick={login}>
+                Verify
+              </button>
+            </>
+          )}
         </div>
       </div>
 
