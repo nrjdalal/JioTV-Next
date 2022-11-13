@@ -21,6 +21,7 @@ const Index = () => {
 
   const sendOTP = async () => {
     await fetch(`/api/otp?number=${number}`)
+    setIsOtp(true)
   }
 
   const login = async () => {
