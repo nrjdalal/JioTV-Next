@@ -13,7 +13,7 @@
 
 <br>
 
-> Method 1 -
+<!-- > Method 1 -
 
 - Install [Docker](https://docs.docker.com/get-docker/)
 - Open terminal and run the code given below -
@@ -25,9 +25,9 @@ docker run -d -p 3000:3000 nrjdalal/jiotv
 - Just visit http://localhost:3000
 - Enjoy live JioTV HD
 
-<br>
+<br> -->
 
-> Method 2 -
+> How To -
 
 - Install [Node.js](https://nodejs.org/en/download/)
 - [Download](https://github.com/nrjdalal/JioTV-Next/archive/main.zip) and extract the zip
