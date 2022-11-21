@@ -71,7 +71,12 @@ const Index = () => {
           ) : (
             <>
               <label>OTP</label>
-              <input className="rounded-lg text-center" onChange={(e) => setPassword(e.target.value)} type="password" />
+              <input
+                className="rounded-lg text-center"
+                onChange={(e) => setPassword(e.target.value)}
+                type="text"
+                value={password}
+              />
               <button className="my-1 w-full rounded-lg bg-slate-900 py-2 text-white" onClick={login}>
                 Verify
               </button>
