@@ -79,7 +79,7 @@ const Home = () => {
             url={'/api/play' + `?c=${router.asPath.substring(1)}&s=${user?.ssoToken}&u=${user?.unique}`}
             controls={true}
             playing={true}
-            muted={true}
+            muted={false}
             width="100%"
             height="100%"
             config={{
