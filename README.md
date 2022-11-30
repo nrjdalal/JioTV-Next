@@ -4,6 +4,7 @@
 ## JioTV Free HD Streaming
 
 > Available for - Browser / Android / Android TV
+> Star would be nice whilst forking
 
 <img src="https://img.shields.io/badge/Status-Working-green"/>
 
