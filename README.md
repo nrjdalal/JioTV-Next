@@ -7,10 +7,6 @@
 
 <img src="https://img.shields.io/badge/Status-Working-green"/>
 
-<br>
-
-> Star would be nice whilst forking
-
 </div>
 
 ### How To Use -
@@ -41,6 +37,7 @@ npm i && npm run build && npm start
 
 - Just visit http://localhost:3000
 - Enjoy live JioTV HD
+- Starring repo would be nice whilst forking
 
 ### Disclaimer
 
