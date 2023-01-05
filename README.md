@@ -3,7 +3,8 @@
 
 ## JioTV Free HD Streaming
 
-> Available for - Browser / Android / Android TV
+> Available for - Browser / Android / Android TV (Working Jan 2023)
+> If you are facing any issues, log out and log in, as Jio sessions expires quickly now
 
 <img src="https://img.shields.io/badge/Status-Working-green"/>
 
