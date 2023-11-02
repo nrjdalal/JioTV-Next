@@ -5,9 +5,7 @@
 
 > Available for - Browser / Android / Android TV (Working Jan 2023)
 
-<br>
-
-> If you are facing any issues, log out and log in, as Jio sessions expires quickly now
+If you are facing any issues, log out and log in, as Jio sessions expires quickly now
 
 <br>
 
